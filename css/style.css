@@ -1,0 +1,254 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font: 16px/24px Dosis;
+	color: #333;
+}
+a {
+	color: #c57076;
+	text-decoration: none;
+}
+a:hover {
+	color: #999;
+}
+.btn {
+	display: inline-block;
+	background: #c57076;
+	padding: 10px 30px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn:hover {
+	background: #999;
+	color: #fff;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Header */
+.main-header {
+	overflow: hidden;
+}
+.header-logo {
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+}
+.header-logo h1 {
+	font-size: 40px;
+}
+.header-logo h2 {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.header-nav {
+	width: 660px;
+	float: left;
+}
+.header-nav ul {
+	list-style: none;
+	float: right;
+}
+.header-nav ul li {
+	float: left;
+}
+.header-nav ul li a {
+	display: block;
+	padding: 40px 20px;
+	color: #333;
+	font-weight: bold;
+}
+.header-nav ul li a:hover {
+	background: #f9f9f9;
+}
+.header-nav ul li a.current {
+	background: #f3f3f3;
+}
+
+/* Masthead */
+.masthead {
+	background: url('../img/masthead-bg.jpg') center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	height: 250px;
+}
+.masthead-title {
+	display: inline-block;
+	background: #000;
+	font-size: 50px;
+	color: #fff;
+	padding: 30px 40px;
+	margin-top: 40px;
+	opacity: 0.5;
+}
+.masthead-btn {
+	margin: 20px 0;
+}
+/* Services */
+.services-list {
+	background: #f7f7f7;
+	overflow: hidden;
+}
+.service-item {
+	width: 280px;
+	float: left;
+	padding: 20px;
+}
+.service-title {
+	font-size: 20px;
+}
+.service-title i {
+	background: #555;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 16px;
+	border-radius: 15px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.service-desc {
+	margin: 5px 0;
+	text-align: justify;
+}
+
+/* Recent Works */
+.recent-work-list {
+	margin: 40px auto;
+	overflow: hidden;
+}
+.recent-work-title {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.recent-work-title span, .recent-work-title span a {
+	color: #999;
+}
+.work-item {
+	float: left;
+	width: 260px;
+	height: 165px;
+	margin: 30px;
+	text-align: center;
+	position: relative;
+}
+.recent-work-hover {
+	display: block;
+	position: absolute;
+	background: #000;
+	color: #fff;
+	font-size: 40px;
+	width: 260px;
+	bottom: 0;
+	height: 0;
+	visibility: hidden;
+	opacity: 0.5;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+.work-item:hover a > .recent-work-hover {
+	visibility: visible;
+	height: 60%;
+	padding-top: 25%;
+}
+
+/* Testimonial */
+.testimonial-container {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+	border-left: 0;
+	border-right: 0;
+	background-image: radial-gradient(circle farthest-corner at 50% -180% , #ececec, rgba(255, 255, 255, 0.1) 73%),
+	radial-gradient(circle farthest-corner at 50% 243% , #e4e4e4, rgba(255, 255, 255, 0.1) 73%);
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
+}
+.client-testimonial {
+	margin: 10px 0;
+}
+.client-name:before {
+	content: '- ';
+}
+.client-name {
+	text-align: right;
+}
+.bx-wrapper .bx-viewport {
+	box-shadow: none;
+	background: transparent;
+	border: none;
+}
+/* Contact Us Button */
+.contact-shortcut {
+	text-align: center;
+	margin: 40px auto;
+}
+.contact-shortcut .btn {
+	padding: 20px 90px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+
+/* Clients List */
+.client-list {
+	margin: 40px auto;
+}
+.client-list-title {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.client-list-title span, .client-list-title span a {
+	color: #999;
+}
+.bx-prev,.bx-next {
+	text-indent: 0 !important;
+	border: 3px solid #e3e3e3;
+	font-size: 20px;
+	font-weight: bold;
+	color: #e3e3e3;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 28px;
+	position: absolute;
+}
+.bx-prev {
+	left: -50px !important;
+}
+.bx-next {
+	right: -50px !important;
+}
+
+/* Footer */
+.main-footer {
+	background: #f9f9f9;
+	border-top: 1px solid #eee;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.footer-about, .footer-social {
+	width: 480px;
+	float: left;
+}
+.main-footer p {
+	margin: 10px 0;
+}
+.footer-social i {
+	font-size: 40px;
+	color: #565656;
+	margin: 5px;
+}
+.footer-social i:hover {
+	color: #999;
+}
